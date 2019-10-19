@@ -1,21 +1,4 @@
-/*-----------------------------------------------------------------------------
 
-	-	Revolution Slider 4.1 Captions -
-
-		Screen Stylesheet
-
-version:   	1.4.5
-date:      	27/11/13
-author:		themepunch
-email:     	info@themepunch.com
-website:   	http://www.themepunch.com
------------------------------------------------------------------------------*/
-
-
-
-/*************************
-	-	CAPTIONS	-
-**************************/
 
 .tp-hide-revslider,.tp-caption.tp-hidden-caption	{	visibility:hidden !important; display:none !important;}
 

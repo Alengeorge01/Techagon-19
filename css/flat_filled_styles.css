@@ -128,13 +128,13 @@
 /*=============================================
 [ Hover Styles ]
 ==============================================*/
-#filled-browser:hover .circle { fill: #B1EB5B }
-#filled-browser:hover .screen { fill: #d6d6d6 }
-#filled-browser:hover .base { fill: #b0b0b0 }
-#filled-browser:hover .top { fill: #8F8F8F }
-#filled-browser:hover .green { fill: #AEE42D }
-#filled-browser:hover .orange { fill: #FFD02C }
-#filled-browser:hover .red { fill: #E64545 }
+.services-offer:hover #filled-browser .circle { fill: #B1EB5B }
+.services-offer:hover #filled-browser .screen { fill: #d6d6d6 }
+.services-offer:hover #filled-browser .base { fill: #b0b0b0 }
+.services-offer:hover #filled-browser .top { fill: #8F8F8F }
+.services-offer:hover #filled-browser .green { fill: #AEE42D }
+.services-offer:hover #filled-browser .orange { fill: #FFD02C }
+.services-offer:hover #filled-browser .red { fill: #E64545 }
 .services-offer:hover #filled-brush .brush_base { fill: #00A3C6 }
 .services-offer:hover #filled-brush .brush_highlight { fill: #43C1DC }
 .services-offer:hover #filled-brush .brush_silver { fill: #C8C8C8 }
@@ -199,15 +199,15 @@
 #filled-folder:hover .paper_back { fill: #D9D9D9 }
 #filled-folder:hover .paper_front { fill: #fff }
 #filled-folder:hover .front { fill: #BF67AB }
-#filled-graph:hover .circle { fill: #E3A7C0 }
-#filled-graph:hover .bar_left { fill: #7BC156 }
-#filled-graph:hover .bar_middle { fill: #92D76C }
-#filled-graph:hover .bar_right { fill: #64A242 }
-#filled-graph:hover .front { fill:  }
-#filled-graph:hover .dot_4,
-#filled-graph:hover .dot_3,
-#filled-graph:hover .dot_2,
-#filled-graph:hover .dot_1 { fill: #fff }
+.services-offer:hover #filled-graph .circle { fill: #E3A7C0 }
+.services-offer:hover #filled-graph .bar_left { fill: #7BC156 }
+.services-offer:hover #filled-graph .bar_middle { fill: #92D76C }
+.services-offer:hover #filled-graph .bar_right { fill: #64A242 }
+.services-offer:hover #filled-graph .front { fill:  }
+.services-offer:hover #filled-graph .dot_4,
+.services-offer:hover #filled-graph .dot_3,
+.services-offer:hover #filled-graph .dot_2,
+.services-offer:hover #filled-graph .dot_1 { fill: #fff }
 .services-offer:hover #filled-heart .circle { fill: #292929 }
 .services-offer:hover #filled-heart .base { fill: #BC4B36 }
 .services-offer:hover #filled-heart .left { fill: #db5940 }
@@ -221,11 +221,11 @@
 #filled-location:hover .circle { fill: #4890A8 }
 #filled-location:hover .base { fill: #B6351B }
 #filled-location:hover .inner { fill: #7E2412 }
-#filled-lock:hover .circle { fill: #02AF7E }
-#filled-lock:hover .base { fill: #C9A80D }
-#filled-lock:hover .baselight { fill: #D9BC36 }
-#filled-lock:hover .keyhole { fill: #8A7200 }
-#filled-lock:hover .bar { fill: #C6C6C6 }
+.services-offer:hover #filled-lock .circle { fill: #02AF7E }
+.services-offer:hover #filled-lock .base { fill: #C9A80D }
+.services-offer:hover #filled-lock .baselight { fill: #D9BC36 }
+.services-offer:hover #filled-lock .keyhole { fill: #8A7200 }
+.services-offer:hover #filled-lock .bar { fill: #C6C6C6 }
 #filled-magnify:hover .circle { fill: #F2D65F }
 #filled-magnify:hover .base { fill: #34B9F1 }
 #filled-magnify:hover .glass { fill: #8DDDFF }
@@ -238,19 +238,19 @@
 #filled-mic:hover .stand { fill: #5F8083 }
 #filled-mic:hover .bars_left { fill: #267178 }
 #filled-mic:hover .bars_right rect { fill: #267178 }
-#filled-paper:hover .circle { fill: #D6D6B8 }
-#filled-paper:hover .base { fill: #929292 }
-#filled-paper:hover .front { fill: #FFFFFF }
-#filled-paper:hover .corner { fill: #D6D6D6 }
-#filled-paper:hover .text { fill: #BBBBBB }
-#filled-pencil:hover .circle { fill: #CDEFE1 }
-#filled-pencil:hover .wood { fill: #FFC833 }
-#filled-pencil:hover .base_top { fill: #456FD8 }
-#filled-pencil:hover .base_bottom { fill: #3258B6 }
-#filled-pencil:hover .base_middle { fill: #567FE5 }
-#filled-pencil:hover .tip { fill: #567FE5 }
-#filled-pencil:hover .eraser { fill: #FF72B1 }
-#filled-pencil:hover .metal { fill: #C6C6C6 }
+.services-offer:hover #filled-paper .circle { fill: #D6D6B8 }
+.services-offer:hover #filled-paper .base { fill: #929292 }
+.services-offer:hover #filled-paper .front { fill: #FFFFFF }
+.services-offer:hover #filled-paper .corner { fill: #D6D6D6 }
+.services-offer:hover #filled-paper .text { fill: #BBBBBB }
+.services-offer:hover #filled-pencil .circle { fill: #CDEFE1 }
+.services-offer:hover #filled-pencil .wood { fill: #FFC833 }
+.services-offer:hover #filled-pencil .base_top { fill: #456FD8 }
+.services-offer:hover #filled-pencil .base_bottom { fill: #3258B6 }
+.services-offer:hover #filled-pencil .base_middle { fill: #567FE5 }
+.services-offer:hover #filled-pencil .tip { fill: #567FE5 }
+.services-offer:hover #filled-pencil .eraser { fill: #FF72B1 }
+.services-offer:hover #filled-pencil .metal { fill: #C6C6C6 }
 .services-offer:hover #filled-phone .circle { fill: #292929 }
 .services-offer:hover #filled-phone .base { fill: #6F82A4 }
 .services-offer:hover #filled-phone .screen { fill: #A5B5D3 }
@@ -270,12 +270,12 @@
 #filled-present:hover .base { fill: #F1F1F1 }
 #filled-present:hover .top { fill: #C3C3C3 }
 #filled-present:hover .ribbon { fill: #D34141 }
-#filled-robot:hover .circle { fill: #E88D70 }
-#filled-robot:hover .ears { fill: #39517A }
-#filled-robot:hover .base { fill: #4C70AF }
-#filled-robot:hover .highlight { fill: #6384BE }
-#filled-robot:hover .antenna { fill: #A0ABBD }
-#filled-robot:hover .eyes { fill: #FFFFFF }
+.services-offer:hover #filled-robot .circle { fill: #E88D70 }
+.services-offer:hover #filled-robot .ears { fill: #39517A }
+.services-offer:hover #filled-robot .base { fill: #4C70AF }
+.services-offer:hover #filled-robot .highlight { fill: #6384BE }
+.services-offer:hover #filled-robot .antenna { fill: #A0ABBD }
+.services-offer:hover #filled-robot .eyes { fill: #FFFFFF }
 #filled-rocket:hover .circle { fill: #4BAE97 }
 #filled-rocket:hover .engine { fill: #7D7D7D }
 #filled-rocket:hover .base { fill: #B0CED8 }
@@ -325,10 +325,10 @@
 #filled-user:hover .collar_left { fill: #FFFFFF }
 #filled-user:hover .head { fill: #F1CDB0 }
 #filled-user:hover .hair { fill: #AB6125 }
-#filled-winner:hover .circle { fill: #F8B243 }
-#filled-winner:hover .ribbon { fill: #5BB3F0 }
-#filled-winner:hover .base { fill: #1983CD }
-#filled-winner:hover .text { fill: #FFFFFF }
+.services-offer:hover #filled-winner .circle { fill: #F8B243 }
+.services-offer:hover #filled-winner .ribbon { fill: #5BB3F0 }
+.services-offer:hover #filled-winner .base { fill: #1983CD }
+.services-offer:hover #filled-winner .text { fill: #FFFFFF }
 /*=============================================
 [ Animation Styles ]
 ==============================================*/

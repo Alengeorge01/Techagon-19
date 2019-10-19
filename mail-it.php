@@ -1,9 +1,6 @@
 <?php
 
-/* Code by David McKeown - craftedbydavid.com */
-/* Editable entries are bellow */
-
-$send_to = "mail@server.com";
+$send_to = "ace@karunya.edu.in";
 $send_subject = "Ajax form ";
 
 

@@ -3,13 +3,24 @@
 <!--[if gt IE 8]>
 <!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133827990-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-133827990-1');
+</script>
+	
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
+<!--HEAD-->
 	<title>Techagon'19</title>
 	<meta name="description" content="Technical Symposium">
 	<meta name="author" content="ACE">
+
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -26,12 +37,48 @@
 	<link rel="stylesheet" href="css/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/flat_filled_styles.css"><!--SVG Animation Styles-->
 	<link rel="stylesheet" href="css/retina.css"/>
-	
+	<link rel="stylesheet" type="text/css" href="owl/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="owl/owl.theme.css">
+	<style type="text/css">
+
+		#owl-demo .item{
+		  margin: 3px;
+		}
+		#owl-demo .item img{
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+	</style>
+
+	<style type="text/css">
+		#open{
+			display: none;
+		}
+		.cool:hover{
+			color: #DC1616;
+			-webkit-transition-delay:100ms;
+			-moz-transition-delay:100ms;
+			-o-transition-delay:100ms;
+			-ms-transition-delay:100ms;
+			transition-delay:100ms;
+		}
+
+		#mar{
+			color: #ffff00;
+		}
+		#mar:hover{
+			color: red;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/core.css">
+
+
 
 		
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.png">
+	<link rel="shortcut icon" href="ad.png">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
@@ -48,66 +95,60 @@
 		<div id="menu-wrap" class="menu-back cbp-af-header">
 			<div class="container">
 				<div class="sixteen columns">
-					<div class="logo"></div>
-					<ul class="slimmenu">
-						<li> 
-							<a class="scroll" href="#home">home</a>
+					<a class="scroll" href="#home"><div class="logo" ></div></a>
+					<center><ul class="slimmenu">
+						<li>
+							<a class="scroll" href="#about">About</a>
 						</li>
 						<li>
-							<a class="scroll" href="#about">about</a>
-						</li>
-						<li>
-							<a class="scroll" href="#work">work</a>
+							<a class="scroll" href="#work">Gallery</a>
 						</li>
 						<li> 
-							<a class="scroll" href="#services">services</a>
+							<a class="scroll" href="#services">Registration</a>
 						</li>
 						<li> 
-							<a class="scroll" href="#blog">jurnal</a>
+							<a class="scroll" href="#logos">Sponsors</a>
 						</li>
 						<li>
-							<a class="scroll" href="#contact">contact</a>
+							<a class="scroll" href="#contact">Contact</a>
 						</li>
-					</ul>
+
+					</ul></center>
+
 				</div>
+					<a href="#services"><marquee><p id="mar">Click here to get updates regarding Workshops and Events .</p></marquee></a>	
+				
 			</div>
-		</div>		
+
+
+		</div>	
 
 			<div id="home">	
-				<div class="small-text"><div class="cl-effect-5"><a class="scroll" href="#work"><span data-hover="portfolio">portfolio</span></a> <a class="scroll" href="#contact"><span data-hover="contact">contact</span></a></div></div>
-				<div class="social-top">
-					<ul class="list-social">
-						<li class="icon-soc tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-							<a href="#">&#xf099;</a>
-						</li>
-						<li class="icon-soc tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-							<a href="#">&#xf09a;</a>
-						</li>
-						<li class="icon-soc tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-							<a href="#">&#xf09b;</a>
-						</li>
-						<li class="icon-soc tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-							<a href="#">&#xf0d5;</a>
-						</li>
-					</ul>	
-				</div>	
-				<div class="big-text">
-					<ul class="flippy">
-						<li><span>WE ARE BACK</span></li>
-						<li><span>WITH</span></li>
-						<li><span>TECHAGON'19</span></li>
-					</ul>
-				</div>
-						<div class="just_pattern"></div>
-						<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="images/1.jpg"> 
-							<source src="videos/video.webm" type="video/webm"> 
-							<source src="videos/video.mp4" type="video/mp4"> 
-							<source src="videos/video.ogg" type="video/ogg"> 
-						</video>
-				
+
+					<div>
+						<canvas id="scene"></canvas>
+						<input id="copy" type="text" value="Techagon'19 ♥" style="display : none"; disabled />
+					</div>
 						
-				<a class="scroll" href="#about"><div class="scroll-btn tipped" data-title="about agency"  data-tipper-options='{"direction":"top","follow":"true"}'></div></a>
+								<div style="position:relative; bottom: 30%;">
+								
+									<div class="small-text"><div class="cl-effect-5"><a class="scroll" href="#work"><span data-hover="portfolio">Portfolio</span></a> <a class="scroll" href="#contact"><span data-hover="contact">Contact</span></a></div></div>
+									<div class="big-text">
+										<ul class="flippy">
+											<li><span>ACE IS BACK</span></li>
+											<li><span>WITH</span></li>
+											<li><span>TECHAGON'19</span></li>
+										</ul>
+									</div>
+									
+							</div>
+							<div style="position:relative;bottom:5%;">
+								<a class="scroll" href="#about"><div class="scroll-btn tipped" data-title=""  data-tipper-options='{"direction":"top","follow":"true"}'></div></a>
+							</div>
+					</div>
+				</div>
 			</div>
+			
 
 			
 			<div id="about">
@@ -116,7 +157,9 @@
 						<div class="header-text">
 							<div class="header-shadow-text">About Us</div>
 							<h1>About Us</h1>
-							<p>WE'RE A CLOSE TEAM OF CREATIVES, DESIGNERS & DEVELOPERS WHO WORK TOGETHER TO CREATE BEAUTIFUL, ENGAGING DIGITAL EXPERIENCES.</p>
+							<p style="text-transform: capitalize;">A National Level Technical Symposium organized by the Department of Computer Sciences
+							Technology, every year since 2014 where we introduce leading cutting edge technologies through exciting workshops and competitions. Techagon’19 promises content rich, day-long programs which focus' on the most technological learning, sound projects and ideas all that will help build a budding professional technically.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -125,41 +168,50 @@
 					<div class="container">
 						<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
 							<div class="icon-left1">&#xf0c6;</div>
-							<h5>Networking.</h5>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui.</p>
+							<h5>Technical skills.</h5>
+							<!-- <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui.</p> -->
 						</div>
 						<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
 							<div class="icon-left1">&#xf080;</div>
-							<h5>Analytics.</h5>
-							<p>Sed ut perspiciatis unde omnis iste natus error est eligendi optio cumque nihil.</p>
+							<h5>Technical knowledge.</h5>
+							<!-- <p>Sed ut perspiciatis unde omnis iste natus error est eligendi optio cumque nihil.</p> -->
 						</div>
 						<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
 							<div class="icon-left1">&#xf120;</div>
-							<h5>Development.</h5>
-							<p class="padding-bottom-project">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p>
+							<h5>Technical Exhibition.</h5>
+							<!-- <p class="padding-bottom-project">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.</p> -->
 						</div>
 					</div>
 				</div>	
 				<div class="video-sections">
-					<div class="video-section-1">	
+					<div class="video-section-1">
 						<div class="just_pattern"></div>
-						<div class="text-over-video">A Day at the Office</div>	
+						<video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" poster="images/1.jpg">
+							<source src="videos/video.mp4" type="video/mp4"> 
+						</video>
+						
+						<div class="text-over-video">Promo Video 2019</div>	
 					</div>	
 					<div class="video-section-2">	
 						<div class="container">
 							<div class="nine columns padding-top-video-sec2" data-scrollreveal="enter right and move 150px over 1s">
-								<h5>WHAT WE DO.</h5>
-								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+								<h5>WORKSHOPS</h5>
+								<p>
+									Workshops that will provide in depth knowledge as well as up to date market trends and a hands on practise for the same.</p>
 							</div>
 							<div class="clear"></div>
 							<div class="nine columns" data-scrollreveal="enter right and move 150px over 1s">
-								<h5>WHAT WE ACHIEVE.</h5>
-								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+								<h5>COMPETITIONS</h5>
+								<p>
+									To not just find the best of the best but to enable participants to understand where they stand on an international level.
+								</p>
 							</div>
 							<div class="clear"></div>
 							<div class="nine columns" data-scrollreveal="enter right and move 150px over 1s">
-								<h5>AT THE END.</h5>
-								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
+								<h5>HACKATHON</h5>
+								<p>
+									Finally, A Hackathon to bring out the hidden innovators and give them a platform for national recognition. 
+								</p>
 							</div>
 						</div>
 					</div>	
@@ -171,110 +223,155 @@
 				<div class="container">
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
-							<div class="header-shadow-text">the team</div>
-							<h1>the team</h1>
-							<p>WE'RE A SMALL, FRIENDLY AND TALENTED TEAM. WE CRAFT BEAUTIFUL DIGITAL SOLUTIONS FOR AWESOME CLIENTS ACROSS ALL THE PLATFORMS.</p>
+							<div class="header-shadow-text">Resource Persons</div>
+							<h1>Resource Persons</h1>
+							<p>Here to take learning to the next level...</p>
 						</div>
 					</div>
 				</div>
-				<div class="container">	
-					<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">
-						<div class="team-wrap">	
-							<img src="images/team1.jpg" alt=""/>
-							<h5>JAMES BEAN</h5>
-							<p>Creative Director</p>
+				<div class="container">
+				<div id="owl-demo">
+          		
+          		<div class="item">
+				  	<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">
+				  		<div class="team-wrap">	
+							<img src="images/res/daniel.jpg" alt=""/>
+							<h5>DANIEL JACOB</h5>
+							<p>Chief Guest</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://www.linkedin.com/in/daniel-jacob-75b78a14/">&#xf08c;</a>
 									</li>
 								</ul>	
 							</div>								
 						</div>
-					</div>	
-					<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">	
-						<div class="team-wrap">	
-							<img src="images/team2.jpg" alt=""/>
-							<h5>ISABELLA MORO</h5>
-							<p>Chief Executive Officer</p>
+				  	</div>
+				  </div>
+				  <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">
+				  		<div class="team-wrap">	
+							<img src="images/res/arun.jpg" alt=""/>
+							<h5>ARUN SAMUEL B</h5>
+							<p>Data Security & Web Hacking</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://www.linkedin.com/in/arun-samuel-94351956/">&#xf08c;</a>
 									</li>
 								</ul>	
-							</div>
+							</div>								
 						</div>
-					</div>	
-					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+				  	</div>
+				  </div>
+				  <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
 						<div class="team-wrap">	
-							<img src="images/team3.jpg" alt=""/>
-							<h5>DAVID IVE</h5>
-							<p>General Manager</p>
+							<img src="images/res/sam.jpg" alt=""/>
+							<h5>SAMUEL JEYASINGH</h5>
+							<p>Full Stack Web Development</p>
 							<div class="team-line"></div>
 							<div class="social-team">
 								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
-									</li>
-								</ul>	
-							</div>
-						</div>
-					</div>	
-					<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
-						<div class="team-wrap">	
-							<img src="images/team4.jpg" alt=""/>
-							<h5>JAMES MORO</h5>
-							<p>HR Manager</p>
-							<div class="team-line"></div>
-							<div class="social-team">
-								<ul class="team-social">
-									<li class="icon-team tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf099;</a>
-									</li>
-									<li class="icon-team tipped" data-title="facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09a;</a>
-									</li>
-									<li class="icon-team tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf09b;</a>
-									</li>
-									<li class="icon-team tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true"}'>
-										<a href="#">&#xf0d5;</a>
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://www.linkedin.com/in/samueljeyasingh/">&#xf08c;</a>
 									</li>
 								</ul>	
 							</div>
 						</div>
 					</div>
-				</div>		
+				  </div>
+				   <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="images/res/bright1.jpg" alt=""/>
+							<h5>BRIGHT GEE VARGHESE</h5>
+							<p>Enterprise Mobile App Developement</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://biography.omicsonline.org/india/karunya-university/bright-gee-varghese-385314">&#xf08c;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="images/res/raj.jpg" alt=""/>
+							<h5>RAJA GOPAL</h5>
+							<p>Deep Learning with Keras</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<!-- <a href="https://www.linkedin.com/in/rajagopal-a-6509513/">&#xf08c;</a> -->
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter left and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="images/res/dinesh.jpg" alt=""/>
+							<h5>DINESH M</h5>
+							<p>Robotics Process Automation</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://www.linkedin.com/in/dhinesh-m-13306478/">&#xf08c;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				  </div>
+				 <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="images/res/jai.jpg" alt=""/>
+							<h5>Jai Praveen</h5>
+							<p>Blockchain Decentralisation</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://www.linkedin.com/in/jai-praveen-5412a23a/">&#xf08c;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="item">
+				  	<div class="four columns" data-scrollreveal="enter right and move 150px over 1s">	
+						<div class="team-wrap">	
+							<img src="images/res/sarath.jpeg" alt=""/>
+							<h5>Sarath Shyamson</h5>
+							<p>Blockchain Decentralisation</p>
+							<div class="team-line"></div>
+							<div class="social-team">
+								<ul class="team-social">
+									<li class="icon-team tipped" data-title="linkedin"  data-tipper-options='{"direction":"top","follow":"true"}'>
+										<a href="https://www.linkedin.com/in/sarath-shyamson-b9831213/">&#xf08c;</a>
+									</li>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				  </div>
+				  
+				  
+				</div>
+			</div>
 			</div>			
 			
 			
@@ -285,76 +382,77 @@
 							<ol class="slides">
 								<li class="current">
 									<div class="description">
-										<h4>Tilted Content Slideshow</h4>
-										<p>This slider plays with 3D perspective and performs some interesting animations on the right-hand side images.</p>
+										<h4>Deep Learning with Keras</h4>
+										<p>This workshop will introduce you to the field of deep learning and teach you the fundamentals. You will learn about some of the exciting applications of deep learning, the basics of neural networks, different deep learning models, and how to build your first deep learning model using the easy yet powerful library Keras.</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="images/1_screen.jpg" alt=""/></a>
-										<a href="#"><img src="images/2_screen.jpg" alt=""/></a>
+										<a href="#"><img src="images/poster/deep.jpg" alt=""/></a>
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>CSS Animations</h4>
-										<p>We are using 12 different animations for showing and hiding the items of a slide. The animations are defined by randomly adding data-attributes called <code>data-effect-in</code> and <code>data-effect-out</code> for every slide. </p>
-									</div>
-									<div class="tiltview row">
-										<a href="#"><img src="images/3_mobile.jpg" alt=""/></a>
-										<a href="#"><img src="images/4_mobile.jpg" alt=""/></a>
-									</div>
-								</li>
-								<li>
-									<div class="description">
-										<h4>Tilted Items</h4>
-										<p>The perspective view is achieved by adding a perspective value to the slide list item and tilting a division that contains the two screenshots.</p>
+										<h4>Blockchain Decentralisation</h4>
+										<p>In this workshop one will learn a practical approach to various cryptocurrencies such as bitcoins, blockchain wallets and its peer-to-peer(decentralized) properties.
+										</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="images/5_screen.jpg" alt=""/></a>
-										<a href="#"><img src="images/6_screen.jpg" alt=""/></a>
+										<a href="#"><img src="images/poster/bd.jpg" alt=""/></a>
+										
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>Column or Row</h4>
-										<p>The items in the tilted container are either laid out in a column or in a row. For some directions we need to adjust the animation delays for the items, since we don't want the items to overlap each other when they move in or out.</p>
-									</div>
-									<div class="tiltview row">
-										<a href="#"><img src="images/1_mobile.jpg" alt=""/></a>
-										<a href="#"><img src="images/2_mobile.jpg" alt=""/></a>
-									</div>
-								</li>
-								<li>
-									<div class="description">
-										<h4>Responsiveness</h4>
-										<p>For smaller screens, the items on the right hand side will become less opaque and serve as decoration only. The focus will be on the description which will occupy all the width.</p>
+										<h4>Robotics Process Automation</h4>
+										<p>In this workshop one shall learn to configure computer software or a “robot” to capture and interpret existing applications for processing a transaction, manipulating data, triggering responses and communicating with other digital systems.</p>
 									</div>
 									<div class="tiltview col">
-										<a href="#"><img src="images/3_screen.jpg" alt=""/></a>
-										<a href="#"><img src="images/4_screen.jpg" alt=""/></a>
+										<a href="#"><img src="images/poster/rob.jpg" alt=""/></a>
+									</div>
+									
+								</li>
+								<li>
+									
+									<div class="description">
+										<h4>Enterprise Mobile App Developement</h4>
+										<p>Android App Development Workshop mainly focus to help the student to build Android applications using Android Studio from scratch. Students will be exposed to XML to build the front end and work on Java for the backend. 
+ 										</p>
+									</div>
+									<div class="tiltview col">
+										<a href="#"><img src="images/poster/an.jpg" alt=""/></a>
+										
 									</div>
 								</li>
 								<li>
 									<div class="description">
-										<h4>Navigation</h4>
-										<p>For the "line" navigation we use a little trick to make the clickable area a bit bigger: we add a thick white border to the top and bottom of the span. Since the border is part of the element, it will be part of the clickable zone.</p>
+										<h4>Full Stack Web Development</h4>
+										<p>This worskhop will focus on training the students in both front end and back end development. Create a seamelessly created project using complete and structured knowledge in the development and deployment.</p>
 									</div>
-									<div class="tiltview row">
-										<a href="#"><img src="images/5_mobile.jpg" alt=""/></a>
-										<a href="#"><img src="images/6_mobile.jpg" alt=""/></a>
+									<div class="tiltview col">
+										<a href="#"><img src="images/poster/wd.jpg" alt=""/></a>
+										
+									</div>
+								</li>
+								<li>
+									<div class="description">
+										<h4>Data Security and Web Hacking</h4>
+										<p>This workshop focuses on how advanced client based, server based and application based web attacks are performed in a simulated/test environment in an ethical way. One shall learn to mitigate these attack using the recommended solution at the end of each module.</p>
+									</div>
+									<div class="tiltview col">
+										<a href="#"><img src="images/poster/ds.jpg" alt=""/></a>
+										
 									</div>
 								</li>
 							</ol>
 						</div><!-- /slideshow -->		
 			</div>			
-			
-			
+
 			<div id="work">	
 				<div class="container">
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
-							<div class="header-shadow-text">work</div>
-							<h1>work</h1>
-							<p>WE BELIEVE OUR WORK SPEAKS FOR ITSELF. BROWSE OUR MOST RECENT PROJECTS BELOW.</p>
+							<div class="header-shadow-text">Photo Corner</div>
+							<h1>Photo Corner</h1>
+							<p>“Photography is the story I fail to put into words.” <br>— Destin Sparks</p>
 						</div>
 					</div>
 				</div>
@@ -363,6 +461,7 @@
 				<div class="portfolio"></div>
 
 
+			
 				<div class="expander-wrap relative">
 					<div id="expander-wrap">
 						<p class="cls-btn"><a class="close">X</a></p>
@@ -376,107 +475,188 @@
 					<div class="sixteen columns">
 						<div id="portfolio-filter">
 							<ul id="filter">
-								<li><a href="#" class="current" data-filter="*" title="">Show all</a></li>
-								<li><a href="#" data-filter=".photography" title="">photography</a></li>
-								<li><a href="#" data-filter=".illustration1" title="">illustration</a></li>
-								<li><a href="#" data-filter=".motion-graphics" title="">motion graphics</a></li>
-								<li><a href="#" data-filter=".web-design" title="">web design</a></li>
+								<li><a href="#" data-filter=".2017" title="">2017</a></li>
+								<li><a href="#" data-filter=".2018" title="">2018</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<ul class="portfolio-wrap">
-					<li class="portfolio-box photography web-design">	
-						<a class="expander" href="project2.html" title="">
-							<img  src="images/gallery/1.jpg" alt="" />	
-							<div class="mask"></div>
-							<h4>All The Time</h4>
-						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/1.jpg" title="">
-							<div class="fancybox-button">&#xf106;</div>
-						</a>	
-					</li>
-					<li class="portfolio-box illustration1 motion-graphics">	
-						<a class="expander" href="project1.html" title="">
+					
+					<li class="portfolio-box web-design 2018">
+						<a class="expander" href="project4.html" title="">
 							<img  src="images/gallery/2.jpg" alt="" />
-							<div class="mask"></div>	
-							<h4>Golden Eagle</h4>	
+							<div class="mask"></div>
+
 						</a>	
 						<a class="fancybox-effects-d" href="images/gallery/2.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
-						</a>		
-					</li>		
-					<li class="portfolio-box motion-graphics photography">	
-						<a class="expander" href="project3.html" title="">
-							<img  src="images/gallery/3.jpg" alt="" />
-							<div class="mask"></div>
-							<h4>All The Time</h4>
-						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/3.jpg" title="">
-							<div class="fancybox-button">&#xf106;</div>
-						</a>				
-					</li>	
-					<li class="portfolio-box web-design illustration1">
-						<a class="expander" href="project4.html" title="">
-							<img  src="images/gallery/4.jpg" alt="" />
-							<div class="mask"></div>
-							<h4>Fixed Mag</h4>	
-						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/4.jpg" title="">
-							<div class="fancybox-button">&#xf106;</div>
 						</a> 			
 					</li>	
-					<li class="portfolio-box photography web-design">	
+					<li class="portfolio-box 2017 web-design">	
 						<a class="expander" href="project2.html" title="">
-							<img  src="images/gallery/5.jpg" alt="" />	
+							<img  src="images/gallery/20171.jpg" alt="" />	
 							<div class="mask"></div>	
-							<h4>La Catería</h4>
+							
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/5.jpg" title="">
+						<a class="fancybox-effects-d" href="images/gallery/20171.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>			
 					</li>
-					<li class="portfolio-box illustration1 motion-graphics">	
+					<li class="portfolio-box 2018 motion-graphics">	
 						<a class="expander" href="project1.html" title="">
-							<img  src="images/gallery/6.jpg" alt="" />
-							<div class="mask"></div>
-							<h4>5th Anniversary Set</h4>
-						</a>		
-						<a class="fancybox-effects-d" href="images/gallery/6.jpg" title="">
+							<img  src="images/gallery/10.jpg" alt="" />
+							<div class="mask"></div>	
+
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/10.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>		
-					</li>	
-					<li class="portfolio-box motion-graphics photography">
+					</li>		
+					<li class="portfolio-box motion-graphics 2017">	
 						<a class="expander" href="project3.html" title="">
-							<img  src="images/gallery/7.jpg" alt="" />	
+							<img  src="images/gallery/20172.jpg" alt="" />
 							<div class="mask"></div>
-							<h4>La Catería</h4>
+							
 						</a>	
-						<a class="fancybox-effects-d" href="images/gallery/7.jpg" title="">
+						<a class="fancybox-effects-d" href="images/gallery/20172.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>				
+					</li>	
+					<li class="portfolio-box web-design 2018">
+						<a class="expander" href="project4.html" title="">
+							<img  src="images/gallery/11.jpg" alt="" />
+							<div class="mask"></div>
+
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/11.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a> 			
+					</li>	
+					<li class="portfolio-box 2017 web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="images/gallery/20173.jpg" alt="" />	
+							<div class="mask"></div>	
+							
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/20173.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
 						</a>			
-					</li>	
-					<li class="portfolio-box web-design illustration1">
+					</li>
+					
+					<li class="portfolio-box web-design 2018">
 						<a class="expander" href="project4.html" title="">
-							<img  src="images/gallery/8.jpg" alt="" />	
+							<img  src="images/gallery/8.jpg" alt="" />
 							<div class="mask"></div>
-							<h4>Dan Fink</h4>
+
 						</a>	
 						<a class="fancybox-effects-d" href="images/gallery/8.jpg" title="">
 							<div class="fancybox-button">&#xf106;</div>
+						</a> 			
+					</li>	
+					<li class="portfolio-box 2017 web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="images/gallery/20174.jpg" alt="" />	
+							<div class="mask"></div>	
+							
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/20174.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
 						</a>			
+					</li>
+					<li class="portfolio-box 2018 motion-graphics">	
+						<a class="expander" href="project1.html" title="">
+							<img  src="images/gallery/9.jpg" alt="" />
+							<div class="mask"></div>
+
+						</a>		
+						<a class="fancybox-effects-d" href="images/gallery/9.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>		
+					</li>	
+					<li class="portfolio-box 2017 web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="images/gallery/20175.jpg" alt="" />	
+							<div class="mask"></div>
+							
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/20175.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>	
+					</li>
+					<li class="portfolio-box 2018 motion-graphics">	
+						<a class="expander" href="project1.html" title="">
+							<img  src="images/gallery/3.jpg" alt="" />
+							<div class="mask"></div>
+
+						</a>		
+						<a class="fancybox-effects-d" href="images/gallery/3.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>		
+					</li>
+					<li class="portfolio-box 2017 web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="images/gallery/20176.jpg" alt="" />	
+							<div class="mask"></div>
+							
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/20176.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>	
+					</li>
+					<li class="portfolio-box 2018 motion-graphics">	
+						<a class="expander" href="project1.html" title="">
+							<img  src="images/gallery/7.jpg" alt="" />
+							<div class="mask"></div>	
+
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/7.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>		
 					</li>		
+					<li class="portfolio-box motion-graphics 2017">	
+						<a class="expander" href="project3.html" title="">
+							<img  src="images/gallery/20177.jpg" alt="" />
+							<div class="mask"></div>
+							
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/20177.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>				
+					</li>	
+					
+					
+					<li class="portfolio-box 2018 motion-graphics">	
+						<a class="expander" href="project1.html" title="">
+							<img  src="images/gallery/12.jpg" alt="" />
+							<div class="mask"></div>
+						</a>		
+						<a class="fancybox-effects-d" href="images/gallery/12.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>		
+					</li>	
+					<li class="portfolio-box 2017 web-design">	
+						<a class="expander" href="project2.html" title="">
+							<img  src="images/gallery/20178.jpg" alt="" />	
+							<div class="mask"></div>	
+							
+						</a>	
+						<a class="fancybox-effects-d" href="images/gallery/20178.jpg" title="">
+							<div class="fancybox-button">&#xf106;</div>
+						</a>			
+					</li>
+					
 				</ul>
 				<div class="clear"></div>
 				<div id="link-work">	
 					<div class="container">
 						<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
-							<h6>ready to start conversation?</h6>
-							<div class="cl-effect-5"><a class="scroll" href="#contact"><span data-hover="contact us">get in touch</span></a></div>
+							<h6>Ready to start conversation?</h6>
+							<div class="cl-effect-5"><a class="scroll" href="#contact"><span data-hover="contact us">Get in Touch</span></a></div>
 						</div>
 					</div>		
 				</div>	
-			</div>				
+			</div>						
 
 
 			<div id="sep2">	
@@ -485,26 +665,26 @@
 				<div class="container z-index">
 					<div class="four columns">
 						<div class="facts-wrap">
-							<div class="facts-wrap-num"><span class="counter">87</span></div>
-							<h5>Clients</h5> 
+							<div class="facts-wrap-num"><span class="counter">949</span></div>
+							<h5>Participants</h5> 
 						</div>
 					</div>
 					<div class="four columns">
 						<div class="facts-wrap">
-							<div class="facts-wrap-num"><span class="counter">25</span></div>
-							<h5>Awards</h5> 
+							<div class="facts-wrap-num"><span class="counter">49</span></div>
+							<h5>Volunteers</h5> 
 						</div>
 					</div>
 					<div class="four columns">
 						<div class="facts-wrap">
-							<div class="facts-wrap-num"><span class="counter">68</span></div>
-							<h5>Projects</h5> 
+							<div class="facts-wrap-num"><span class="counter">6</span></div>
+							<h5>Workshops</h5> 
 						</div>
 					</div>
 					<div class="four columns">
 						<div class="facts-wrap">
-							<div class="facts-wrap-num"><span class="counter">46</span></div>
-							<h5>Mails</h5> 
+							<div class="facts-wrap-num"><span class="counter">2</span></div>
+							<h5>Events</h5> 
 						</div>
 					</div>
 				</div>						
@@ -518,163 +698,378 @@
 				<div class="container">
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
-							<div class="header-shadow-text">services</div>
-							<h1>services</h1>
-							<p>JUST CHECK OUT ALL OF THE SERVICE LISTS BELOW TO GET A GENERAL IDEA OF WHAT WE ARE CAPABLE OF DELIVERING.</p>
+							<div class="header-shadow-text">Workshops</div>
+							<h1>Workshops</h1>
+							<p></p>
 						</div>
 					</div>
 				</div>
 				<div class="container">
-					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
-						<div class="services-offer">
-							<span class="svg-icon flat-filled" id="filled-brush"></span>
-							<h5>Creative design</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+						<a href="deeplearning.html" target="_blank" style="color: rgb(166,166,166);">
+							<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
+								<div class="services-offer">
+									<span class="svg-icon flat-filled" id="filled-graph"></span>
+									<h5 class="cool">Deep Learning with Keras</h5>
+									<p>RAJA GOPAL</p>
+									<p><strong style="color: white">Venue:- CTC - I , Lab 9 </strong></p>
+									<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+									<!-- <a><button style="width: 140px; height: 70px;">Registration Closed</button></a> -->
+								</div>
+							</div>
+						</a>
+						<a href="android.html" target="_blank" style="color: rgb(166,166,166);">
+							<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
+								<div class="services-offer">
+									<span class="svg-icon flat-filled" id="filled-phone"></span>
+									<h5 class="cool">Enterprise Mobile App Developement</h5>
+									<p>BRIGHT GEE VARGHESE</p>
+									<p><strong style="color: white">Venue:- CTC - II , Lab 15</strong></p>
+									<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+									<!-- <a><button style="width: 140px; height: 70px;">Registration Closed</button></a> -->
+								</div>
+							</div>
+						</a>
+						<a href="datasecurity.html" target="_blank" style="color: rgb(166,166,166);">
+							<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
+								<div class="services-offer">
+									<span class="svg-icon flat-filled" id="filled-lock"></span>
+									<h5 class="cool">Data Security and Web Hacking</h5>
+									<p>ARUN SAMUEL B</p>
+									<p><strong style="color: white">Venue:- CTC - II , Lab 12</strong></p>
+									<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+									<!-- <a><button style="width: 140px; height: 70px;">Registration Closed</button></a> -->
+								</div>
+							</div>
+						</a>
+						
+							<div class="clear"></div>
+							<a href="blockchain.html" target="_blank" style="color: rgb(166,166,166);">
+								<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
+									<div class="services-offer">
+										<span class="svg-icon flat-filled" id="filled-paper"></span>
+										<h5 class="cool">Blockchain Decentralisation</h5>
+										<p>SARATH SHYAMSON</p>
+										<p><strong style="color: white">Venue:- CTC - I Lab 5 (Day 1) <br><span style="margin-left: 91px;">Lab 6 (Day 2)</span></strong></p>
+										<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+									<!-- <a><button style="width: 140px; height: 70px;">Registration Closed</button></a> -->
+									</div>
+								</div>
+							</a>
+							<a href="webdevelopement.html" target="_blank" style="color: rgb(166,166,166);">
+						<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
+							<div class="services-offer">
+								<span class="svg-icon flat-filled" id="filled-browser"></span>
+								<h5 class="cool">Full Stack Web Development</h5>
+								<p>SAMUEL JEYASINGH</p>
+								<p><strong style="color: white">Venue:- CTC - II, Lab 10</strong></p>
+								<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+								<!-- <a><button style="width: 140px; height: 70px;">Registration Closed</button></a> -->
+							</div>
 						</div>
-					</div>
-					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
-						<div class="services-offer">
-							<span class="svg-icon flat-filled" id="filled-phone"></span>
-							<h5>Responsive design</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+					</a>
+					<a href="robotics.html" target="_blank" style="color: rgb(166,166,166);">
+						<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
+							<div class="services-offer">
+								<span class="svg-icon flat-filled" id="filled-robot"></span>
+								<h5 class="cool">Industrial Robotics Programming</h5>
+								<p>NAGARAJAN S</p>
+								<p><strong style="color: white">Venue:- CTC - I, Lab 11</strong></p>
+
+								<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+									<!-- <a><button style="width: 140px; height: 70px;">Registration Closed</button></a> -->
+							</div>
 						</div>
-					</div>
-					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
-						<div class="services-offer">
-							<span class="svg-icon flat-filled" id="filled-message"></span>
-							<h5>Excellent Support</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
-						</div>
-					</div>
+					</a>
 					<div class="clear"></div>
-					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
-						<div class="services-offer">
-							<span class="svg-icon flat-filled" id="filled-clock"></span>
-							<h5>quick support</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
+								<div class="two-thirds column" data-scrollreveal="enter left and move 150px over 1s">
+									<div class="services-offer">
+										<span class="svg-icon flat-filled" id="filled-winner"></span>
+										<h5 class="cool">Hackathon</h5>
+										<p>RAPID PROTOTYPING EVENT - IBM</p>
+								<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+									</div>
+								</div>
+						<div class="two-thirds column" data-scrollreveal="enter bottom and move 150px over 1s">
+							<div class="services-offer">
+								<span class="svg-icon flat-filled" id="filled-pencil"></span>
+								<h5 class="cool">Code Gladiator</h5>
+								<p>CODING CONTEST</p>
+								<a><button style="width: 140px; height: 70px;">Registration Closed</button></a>
+							</div>
 						</div>
-					</div>
-					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
-						<div class="services-offer">
-							<span class="svg-icon flat-filled" id="filled-email"></span>
-							<h5>Contact form</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
-						</div>
-					</div>
-					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
-						<div class="services-offer">
-							<span class="svg-icon flat-filled" id="filled-heart"></span>
-							<h5>Made with love</h5>
-							<p>Cum sociis natoque penatibus et magnis dis massa.</p>
-						</div>
-					</div>
 				</div>			
 			</div>
 
-			<div id="plans">	
+			<div id="schedules">	
 				<div class="container">
+					<br><br>
 					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
 						<div class="header-text">
-							<div class="header-shadow-text">our plans</div>
-							<h1>our plans</h1>
-							<p>YOU CAN CONFIGURE YOUR PRICING TABLE USING THE GRID SYSTEM IN ORDER TO MAKE IT RESPONSIVE FOR SMALL DEVICES.</p>
+							<div class="header-shadow-text">SCHEDULES</div>
+							<h1>SCHEDULES</h1>
+							<p>Find our Event Schedules here</p>
 						</div>
 					</div>
 				</div>
 				<div class="container">
 					<div class="one-third column" data-scrollreveal="enter left and move 150px over 1s">
 						<div class="plans-offer">
-							<h3>$9.99<span> – month</span></h3>
-							<h6>Standard</h6>
-							<p><strong>24/7</strong> TECH SUPPORT</p>
-							<p><strong>15</strong> PROJECTS</p>
-							<p><strong>5GB</strong> STORAGE</p>
-							<p>UNLIMITED USERS</p>
-							<div class="cl-effect-5"><a href="#"><span data-hover="sing up">sing up</span></a></div>
+							<h3>March 6<span>th</span></h3>
+							<h6>First Day</h6>
+							<ul>
+								<li><p><strong>9:15am - 10:30am - </strong>Inauguration Ceremony</p></li>
+								<li><p><strong>10:35am - 12:45pm -</strong> Workshops</p></li>
+								<li><p><strong>12:45pm - 2:00pm - </strong> Break</p></li>
+								<li><p><strong>2:00pm - 4:40pm - </strong>Workshops/Seminar</p></li>
+							</ul>
 						</div>
 					</div>
 					<div class="one-third column" data-scrollreveal="enter bottom and move 150px over 1s">
 						<div class="plans-offer-gold">
-							<h3>$17.99<span> – month</span></h3>
-							<h6>Gold</h6>
-							<p><strong>24/7</strong> TECH SUPPORT</p>
-							<p><strong>25</strong> PROJECTS</p>
-							<p><strong>15GB</strong> STORAGE</p>
-							<p>UNLIMITED USERS</p>
-							<div class="cl-effect-5"><a href="#"><span data-hover="sing up">sing up</span></a></div>
+							<h3>March 7<span>th</span></h3>
+							<h6>Second Day</h6>
+							<ul>
+								<li><p><strong>9:15am - 12:45pm - </strong> Workshops/Seminar</p></li>
+								<li><p><strong>12:45pm - 2:00pm - </strong> Break</p></li>
+								<li><p><strong>2:00pm - 3:55pm - </strong>Workshops/Seminar</p></li>
+								<li><p><strong>2:00pm - 3:55pm - </strong>Felicitation Ceremony</p></li>
+							</ul>
 						</div>
 					</div>
 					<div class="one-third column" data-scrollreveal="enter right and move 150px over 1s">
 						<div class="plans-offer">
-							<h3>$34.99<span> – month</span></h3>
-							<h6>Premium</h6>
-							<p><strong>24/7</strong> TECH SUPPORT</p>
-							<p><strong>100</strong> PROJECTS</p>
-							<p><strong>50GB</strong> STORAGE</p>
-							<p>UNLIMITED USERS</p>
-							<div class="cl-effect-5"><a href="#"><span data-hover="sing up">sing up</span></a></div>
+							<h3>March 4,5,6<span>th</span></h3>
+							<h6> Rapid Prototyping <br>Hackathon</h6>
+							<ul>
+								<li><p><strong>EEE GALLERY HALL</strong> </p></li>
+								<!-- <li><p><strong>10:00am - 3:00pm - </strong> Hackathon Contest</p></li> -->
+							</ul>
 						</div>
 					</div>
 				</div>	
 			</div>
 
-			<div id="logos">
+			<div id="logos" style="background-color: #000000; color: #ffffff">
 				<div class="container">	
-					<div class="sixteen columns">
-						<div class="logos-wrap">
-							<img  src="images/logos/1.png" alt="" />	
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">Sponsors</div>
+							<h1>Sponsors</h1>
+							<p>Eagerly Waiting For You</p>
 						</div>
-						<div class="logos-wrap">
-							<img  src="images/logos/2.png" alt="" />	
-						</div>	
-						<div class="logos-wrap">
-							<img  src="images/logos/3.png" alt="" />	
-						</div>	
-						<div class="logos-wrap">
-							<img  src="images/logos/4.png" alt="" />	
-						</div>	
-						<div class="logos-wrap">
-							<img  src="images/logos/5.png" alt="" />	
-						</div>	
-						<div class="logos-wrap">
-							<img  src="images/logos/2.png" alt="" />	
-						</div>		
 					</div>
+					<div class="sixteen columns">
+						<a href="https://slamtrade.com/">
+							<div class="logos-wrap">
+							<img  src="images/sponsor/slam.png" alt="" />
+							<h6>SLAMTRADE</h6>	
+						</div>
+						</a>
+						<a href="https://www.new10s.com/">
+							<div class="logos-wrap">
+							<img  src="images/sponsor/flogo.png" style="width: 95px;" alt="" />
+							<h6>NEW 10'S</h6>	
+						</div>
+						</a>
+						
+					</div>
+						
 				</div>		
 			</div>		
 
 
-			<div id="blog">	
+			<div id="schedules">	
 				<div class="just_pattern"></div>
 				<div class="parallax1"></div>
 				<div class="container z-index">	
 					<div class="one-third column">
 						<div class="blog-post">
-							<img  src="images/blog/1.jpg" alt="" />
-							<h5>Blog post</h5>
-							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
-							<p><span>26.2.2014.</span><span> 3 comments</span></p>
+							<img  src="images/members/pranay.jpg" alt="" />
+							<h5>Pranay Kasthala</h5>
+							<p>" Working with ACE to put up Techagon was one of the best learning experiences I've ever had. From learning how to manage people to create thinking and even resource management in order to make the event a smooth one. Even a little bit of finance helped me gain all the real world skills that a budding professional requires to be distinct from the rest of the crowd. "</p>
+							<!-- <p><span>26.2.2014.</span><span> 3 comments</span></p> -->
 						</div>
 					</div>	
 					<div class="one-third column">
 						<div class="blog-post">
-							<img  src="images/blog/2.jpg" alt="" />
-							<h5>Blog post</h5>
-							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
-							<p><span>17.2.2014.</span><span> 7 comments</span></p>
+							<img  src="images/members/floura.jpg" alt="" />
+							<h5>Floura Angel</h5>
+							<p>" Techagon being a platform with various workshops and technical events, it gave me hands-on experience with the latest technologies and was useful as I stepped into the industry with relevant skills and experience. The entire journey from being a participant to leading the event, not just gave me the technical skills required but helped me be get a all-round experience which is very much needed for the corporate world. I am thankful for the department for my overall growth and helping me to gain knowledge about various technologies and the industries’ working. "</p>
+							<!-- <p><span>17.2.2014.</span><span> 7 comments</span></p> -->
 						</div>
 					</div>	
 					<div class="one-third column">
 						<div class="blog-post">
-							<img  src="images/blog/3.jpg" alt="" />
-							<h5>Blog post</h5>
-							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent commodo arcu massa.</p>
-							<p><span>12.2.2014.</span><span> 4 comments</span></p>
+							<img  src="images/members/jedi.jpg" alt="" />
+							<h5>Jedidiah Jayaraj</h5>
+							<p>" Putting together an event of this scale was a truly wonderful experience. The responsibilities were real with real consequences and so were the rewards.This is definitely one of the steps towards my current status as a professional. "</p>
+							<!-- <p><span>12.2.2014.</span><span> 4 comments</span></p> -->
 						</div>
 					</div>
 				</div>		
-			</div>			
+			</div>		 	
+			<br>
+
+			<div id="team1" style="background-color: #000000 ;" >
+				<br><br>
+				<div class="container">
+					<div class="sixteen columns" data-scrollreveal="enter top and move 150px over 1s">
+						<div class="header-text">
+							<div class="header-shadow-text">Core Team</div>
+							<h1>Core Team</h1>
+							<p>Here to take learning to the next level...</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="container">
+							  <div class="row">
+							    <div class="col-lg-12">
+							    <center>
+							    	<div class="portfolioFilter clearfix" >
+							    	<a href="#" data-filter=".head" class="current">HEAD</a>
+								      <a href="#" data-filter=".sec">SECRETARY</a>
+								      <a href="#" data-filter=".man">MANAGEMENT</a>
+								      <a href="#" data-filter=".pr">PROMOTION</a>
+								      <a href="#" data-filter=".fin">FINANCE</a>
+								      <a href="#" data-filter=".it">IT</a>
+							    </div>
+							    </center>
+							      </div>
+							      <center>
+							 <div class="portfolioContainer" >
+
+							    <div class="head" style="margin:40px ">
+							        <div class="team-wrap">	
+										<img src="images/members/hod2.jpg" alt=""/>
+										<h6>Dr. J. Immanuel John Raja</h6>
+										<p>Head of Department</p>
+									</div>
+							      </div>
+							      <div class="head" style="margin:40px ">
+							        <div class="team-wrap">	
+										<img src="images/members/belfin1.jpg" alt=""/>
+										<h6>R.V. Belfin</h6>
+										<p>Faculty Incharge</p>
+									</div>
+							      </div>
+							      <div class="sec images1">
+							        <div class="team-wrap">	
+										<img src="images/members/hari1.jpg" alt=""/>
+										<h6>Hari Chandan</h6>
+										<p>Secretary</p>
+									</div>
+							      </div>
+							      <div class="sec images2">
+							        <div class="team-wrap">	
+										<img src="images/members/reethu2.jpg" alt=""/>
+										<h6>Reethu A. Johnson</h6>
+										<p>Joint Secretary</p>
+									</div>
+							      </div>
+							      
+							      <div class="man images">
+							        <div class="team-wrap">	
+										<img src="images/members/aditya1.jpg" alt=""/>
+										<h6>Aditya Naidu</h6>
+										<p>Joint Event Manager</p>
+									</div>
+							      </div>
+							      <div class="man images">
+							        <div class="team-wrap">	
+										<img src="images/members/sherin1.jpg" alt=""/>
+										<h6>Sherin George</h6>
+										<p>Head Event Manager</p>
+									</div>
+							      </div>
+							      <div class="man images">
+							        <div class="team-wrap">	
+										<img src="images/members/sarvesh1.jpg" alt=""/>
+										<h6>Sarvesh Agrawal</h6>
+										<p>Joint Event Manager</p>
+									</div>
+							      </div>
+							    <div class="pr images1">
+							        <div class="team-wrap">	
+										<img src="images/members/judith1.jpg" alt=""/>
+										<h6>Judith Kurian</h6>
+										<p>Head PR</p>
+									</div>
+							      </div>	
+							      <div class="pr images2" >
+							        <div class="team-wrap">	
+										<img src="images/members/anjali2.jpg" alt=""/>
+										<h6>Anjali R. Benjamin</h6>
+										<p>Joint PR</p>
+									</div>
+							      </div>
+							      
+							      <div class="fin images" >
+							        <div class="team-wrap">	
+										<img src="images/members/ajay1.jpg" alt=""/>
+										<h6>Ajay Kasthala</h6>
+										<p>Joint Treasurer</p>
+									</div>
+							      </div>
+							      <div class="fin images" >
+							        <div class="team-wrap">	
+										<img src="images/members/david1.jpg" alt=""/>
+										<h6>David Avineesh</h6>
+										<p>Head Treasurer</p>
+									</div>
+							      </div>
+							      <div class="fin images" >
+							        <div class="team-wrap">	
+										<img src="images/members/shown1.jpg" alt=""/>
+										<h6>Shown Shaju</h6>
+										<p>Joint Treasurer</p>
+									</div>
+							      </div>
+							      <div class="it">
+							        <div class="team-wrap">	
+										<img src="images/members/joshua1.jpg" alt=""/>
+										<h6>Joshua Fazel</h6>
+										<p>Head IT</p>
+									</div>
+							      </div>
+
+							      <div class="it">
+							        <div class="team-wrap">	
+										<img src="images/members/alen1.jpg" alt=""/>
+										<h6>Alen George</h6>
+										<p>Joint IT</p>
+									</div>
+							      </div>
+							      <div class="it" >
+							        <div class="team-wrap">	
+										<img src="images/members/nishu1.jpg" alt=""/>
+										<h6>Nisheal John</h6>
+										<p>Joint IT</p>
+									</div>
+							      </div>
+							      <div class="it" >
+							        <div class="team-wrap">	
+										<img src="images/members/rohan1.jpg" alt=""/>
+										<h6>Rohan Joseph</h6>
+										<p>Joint IT</p>
+									</div>
+							      </div>
+							      
+							      
+							      
+					    </div>
+							      </center>
+							    
+					  </div>
+					</div>
+					</div>
+
+
+				</div>
+				<br>
+			<br>
 			
+			</div>
 			
 			
 			
@@ -721,17 +1116,18 @@
 					<div id="ajaxsuccess">Successfully sent!!</div>	
 					<div class="clear"></div>
 					<div class="eight columns" data-scrollreveal="enter left and move 150px over 1s">
-						<div class="contact-wrap">
+						<!-- <div class="contact-wrap">
 							<p><i class="icon-contact1">&#xf095;</i><span>call us:</span> (381) 267-6386 <small><em>Monday–Friday | 9am–5pm (GMT +1)</em></small></p>
-						</div>
+						</div> -->
 					</div>
 					<div class="eight columns" data-scrollreveal="enter right and move 150px over 1s">	
-						<div class="contact-wrap">
-							<p><i class="icon-contact1">&#xf041;</i><span>Visit Us:</span> First Street, Sunrise Avenue, New York, USA</p>	
-						</div>
+							<div class="contact-wrap" style="display: inline-block;">
+								<p><i class="icon-contact1">&#xf041;</i><span>Visit Us:</span> CSE DEPARTMENT KARUNYA INSTITUTE OF TECHNOLOGY AND SCIENCES</p>
+							</div>
 					</div>	
 					<div class="sixteen columns" data-scrollreveal="enter bottom and move 150px over 1s">	
-						<a class="button-map close-map"><span>Locate Us on Map</span></a>
+						<a class="button-map close-map" id="boom"><span id="boom">Locate Us on Map</span></a>
+						<div id="open"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3687.855267749183!2d76.74159341458925!3d10.933888359257796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x3ba8669997fee193%3A0x97311db0f759d910!2sDepartment+of+Computer+Science+and+Engineering%2C+Karunya+Nagar%2C+Tamil+Nadu+641114!3m2!1d10.933712199999999!2d76.743121!5e1!3m2!1sen!2sin!4v1549870243421" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 					</div>
 				</div>
 				<div id="google_map"></div>				
@@ -744,8 +1140,8 @@
 				<a class="scroll" href="#home"><div class="back-top">&#xf102;</div></a>	
 				<div class="container">
 					<div class="sixteen columns">
-						<p>Made with<i class="icon-footer">&#xf004;</i>and<i class="icon-footer">&#xf0f4;</i>in serbia</p>
-						<p><small>Template: Ananke by ig design</small></p>
+						<p>Made with<i class="icon-footer">&#xf004;</i>and<i class="icon-footer">&#xf0f4;</i>in Karunya</p>
+						<p><small>© 2019 All Rights Reserved ACE WEB DEVELOPERS</small></p>
 					</div>
 				</div>	
 			</div>
@@ -775,8 +1171,8 @@
 (function($) { "use strict";
             Royal_Preloader.config({
                 mode:           'text', // 'number', "text" or "logo"
-                text:           "Techagon'19",
-                timeout:        1,
+                text:           "TECHAGON'19",
+                timeout:        0,
                 showInfo:       true,
                 opacity:        1,
                 background:     ['#000000']
@@ -803,8 +1199,219 @@
 <script type="text/javascript" src="js/contact.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/template.js"></script>  	  
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript">
+	var canvas = document.querySelector("#scene"),
+		ctx = canvas.getContext("2d"),
+		particles = [],
+		amount = 0,
+		mouse = {x:0,y:0},
+		radius = 1;
+	
+	var copy = document.querySelector("#copy");
+
+	var ww = canvas.width = window.innerWidth;
+	var wh = canvas.height = window.innerHeight;
+
+
+	
+
+	function Particle(x,y){
+		this.x =  Math.random()*ww;
+		this.y =  Math.random()*wh;
+		this.dest = {
+			x : x,
+			y: y
+		};
+
+		if(ww>768){
+		var colors = ["#FFFF00","#00CED1"];
+		this.r =  Math.random()*3 + 2;
+		}
+		else{
+			var colors = ["#ffff00"];
+			this.r =  Math.random()*1 + 2;
+		}
+
+		
+		this.vx = (Math.random()-0.5)*20;
+		this.vy = (Math.random()-0.5)*20;
+		this.accX = 0;
+		this.accY = 0;
+		this.friction = Math.random()*0.05 + 0.94;
+
+		this.color = colors[Math.floor(Math.random()*6)];
+	}
+
+	Particle.prototype.render = function() {
+
+
+		this.accX = (this.dest.x - this.x)/1000;
+		this.accY = (this.dest.y - this.y)/1000;
+		this.vx += this.accX;
+		this.vy += this.accY;
+		this.vx *= this.friction;
+		this.vy *= this.friction;
+
+		this.x += this.vx;
+		this.y +=  this.vy;
+
+		ctx.fillStyle = this.color;
+		ctx.beginPath();
+		ctx.arc(this.x, this.y, this.r, Math.PI * 2, false);
+		ctx.fill();
+
+		var a = this.x - mouse.x;
+		var b = this.y - mouse.y;
+
+		var distance = Math.sqrt( a*a + b*b );
+		if(distance<(radius*70)){
+			this.accX = (this.x - mouse.x)/100;
+			this.accY = (this.y - mouse.y)/100;
+			this.vx += this.accX;
+			this.vy += this.accY;
+		}
+
+	}
+
+	function onMouseMove(e){
+		mouse.x = e.clientX;
+		mouse.y = e.clientY;
+	}
+
+	function onTouchMove(e){
+    if(e.touches.length > 0 ){
+      mouse.x = e.touches[0].clientX;
+      mouse.y = e.touches[0].clientY;
+    }
+	}
+
+function onTouchEnd(e){
+  mouse.x = -9999;
+  mouse.y = -9999;
+}
+
+	function initScene(){
+		ww = canvas.width = window.innerWidth;
+		wh = canvas.height = window.innerHeight;
+
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+		ctx.font = "bold "+(ww/7.5)+"px sans-serif";
+		ctx.textAlign = "center";
+		ctx.fillText(copy.value, ww/2, wh/2);
+
+		var data  = ctx.getImageData(0, 0, ww, wh).data;
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.globalCompositeOperation = "screen";
+
+		particles = [];
+		for(var i=0;i<ww;i+=Math.round(ww/150)){
+			for(var j=0;j<wh;j+=Math.round(ww/150)){
+				if(data[ ((i + j*ww)*4) + 3] > 150){
+					particles.push(new Particle(i,j));
+				}
+			}
+		}
+		amount = particles.length;
+
+	}
+
+	function onMouseClick(){
+		radius++;
+		if(radius ===5){
+			radius = 0;
+		}
+	}
+
+	function render(a) {
+		requestAnimationFrame(render);
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		for (var i = 0; i < amount; i++) {
+			particles[i].render();
+		}
+	};
+
+	copy.addEventListener("keyup", initScene);
+	window.addEventListener("resize", initScene);
+	window.addEventListener("mousemove", onMouseMove);
+	window.addEventListener("touchmove", onTouchMove);
+	window.addEventListener("click", onMouseClick);
+	window.addEventListener("touchend", onTouchEnd);
+	initScene();
+	requestAnimationFrame(render);
+
+
+</script> 
+<script type="text/javascript" src="owl/owl.carousel.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $("#owl-demo").owlCarousel({
+	      autoPlay: 5000, //Set AutoPlay to 3 seconds
+	      items : 4,
+	      itemsDesktop : [1199,3],
+	      itemsDesktopSmall : [979,3]
+	  });
+});
+</script> 
+<script type="text/javascript" src="isotope.js"></script>
+
+<script type="text/javascript">
+	$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '.head',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+ 
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
+</script>
+<script type="text/javascript">
+				$("#boom").click(function(){
+				
+				$("#open").slideToggle(1000);
+			});
+</script>
+<script type="text/javascript">
+	var wid = window.innerWidth;
+	if(wid<768){
+		var v = document.getElementById('video_background');
+		var s = document.createElement('source');
+		sosetAttribute('src','videos/video.mp4');
+		v.appendChild(s);
+		v.play();
+	}
+	else{
+		var v = document.getElementById('video_background');
+		var s = document.createElement('source');
+		s.setAttribute('src','videos/vid.mp4');
+		v.appendChild(s);
+		// v.play();
+	}
+</script>
+
 <!-- End Document
 ================================================== -->
 </body>
 </html>
+<!-- http://www.landmarkmlp.com/js-plugin/owl.carousel/demos/images.html -->

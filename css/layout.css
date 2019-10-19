@@ -333,7 +333,7 @@ body.royal_loader {
 }
 
 .menu-back{
-	background:rgba(60,60,60,.9);
+	background:rgba(00,00,00,0);
 }
 
 
@@ -345,13 +345,13 @@ body.royal_loader {
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-	background:rgba(60,60,60,1);
+	background:rgba(00,00,00,1);
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
-	width:116px;
-	height:60px;
-	background:url('../images/gallery/techagonlogo.png') no-repeat center center;
-	background-size:116px 60px;
+	width:118px;
+	height:65px;
+	background:url('../images/logos/logo2.png') no-repeat center center;
+	background-size:91px 70px;
 	-webkit-transition : all 0.5s ease-out;
 	-moz-transition : all 0.5s ease-out;
 	-o-transition :all 0.5s ease-out;
@@ -391,13 +391,13 @@ ul.slimmenu li ul {
 
 .logo{
 	position:absolute;
-	width:146px;
-	height:80px;
+	width:61px;
+	height:87px;
 	z-index:10000;
 	left:10px;
 	top:10px;
-	background:url('../images/techagonlogo.png') no-repeat center center;
-	background-size:146px 80px;
+	background:url('../images/logos/logo2.png') no-repeat center center;
+	background-size:120px 89px;
 }
 
 
@@ -458,7 +458,7 @@ ul.slimmenu li ul {
 ul.slimmenu {
 	padding-top:10px;
 	padding-right:10px;
-	text-align:right;
+	text-align:center;
 	margin-top:13px;
 	margin-bottom:10px;
 }
@@ -478,11 +478,12 @@ ul.slimmenu li a {
     padding: 10px 0px;
 	cursor:pointer;
     margin: 0px 12px;
-	font-family: 'Lato', sans-serif;
-	font-weight:700;
-	text-transform:uppercase;
+	font-family: 'Satisfy', cursive;
+	/*font-weight:700;*/
+    letter-spacing: 2px;
+	/*text-transform:uppercase;*/
     border-bottom:1px solid rgba(0,0,0,0);
-    font-size: 12px;
+    font-size: 18px;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
@@ -491,6 +492,7 @@ ul.slimmenu li a {
 }
 ul.slimmenu li a:hover {
     text-decoration: none;
+    color: #cfa144;
 }
 ul.slimmenu li {
 }
@@ -593,11 +595,13 @@ ul.slimmenu.collapsed li > ul {
 ================================================== */
 
 #home{
-	position: relative; 
-	margin: 0 auto;
-	width: 100%;
-	overflow:hidden;
-	z-index:2;
+    position: relative;
+    background:url('../images/backcopy.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    overflow:hidden;
+    z-index:2;
 }
 .big-text { 
 	position: absolute; 
@@ -747,22 +751,34 @@ top: 0;
 }
 
 
+.vid{
+    position: absolute; 
+    opacity: 0.8; 
+    left: 0px;
+    top: 0px;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1; 
+}
+
 
 
 
 
 
 .just_pattern { 
-	background-image: url(../images/pattern.png); 
-	position: absolute; 
-	opacity: 0.8; 
-	left: 0px;
-	top: 0px;
-	right:0;
-	bottom:0;
-	width: 100%;
-	height: 100%; 
-	z-index: 1; 
+	/*background-image: url(../images/pattern.png); */
+    position: absolute; 
+    opacity: 0.8; 
+    left: 0px;
+    top: 0px;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1; 
 }
 
 .scroll-btn {
@@ -825,12 +841,13 @@ top: 0;
 
 #about{
 	position: relative; 
-	background:#000000;
+	background:#292929;
 	margin: 0 auto;
 	width: 100%;
 	overflow:hidden;
 	padding-top:60px;
 	z-index:2;
+    color:#ffffff;
 } 
 .header-text{
 	position: relative; 
@@ -903,19 +920,19 @@ top: 0;
 	position: relative; 
 	width: 100%;
 	overflow:hidden;
-	background:#323232;
+	background:#000000;
 	z-index:2;
 } 
 .video-section-1  {
 	position: relative; 
-	background:url('../images/7.jpg') no-repeat center center;
-	background-size:cover;
-	width: 40%;
-	height:450px;
-	display:inline-block;
-	float:left;
-	overflow:hidden;
-	z-index:2;
+    /*background:url('../images/7.jpg') no-repeat center center;*/
+    background-size:cover;
+    width: 40%;
+    height:450px;
+    display:inline-block;
+    float:left;
+    overflow:hidden;
+    z-index:2;
 }
 .video-section-2  {
 	position: relative; 
@@ -935,6 +952,7 @@ top: 0;
 }
 .video-section-2  p{
 	text-align:left;
+    font-size: 15px;
 }  
 .video-section-2  p:last-child{
 	padding-bottom:0;
@@ -987,6 +1005,17 @@ top: 0;
 	padding-bottom:60px;
 	z-index:2;
 } 
+
+#events{
+    position: relative; 
+    margin: 0 auto;
+    width: 100%;
+    overflow:hidden;
+    background:#292929;
+    padding-top:60px;
+    padding-bottom:60px;
+    z-index:2;
+}
  
 .team-wrap{
 	position: relative; 
@@ -1084,10 +1113,10 @@ top: 0;
 	overflow:hidden;
 } 
  
- 
+
  
   .parallax {
-	background: url('../images/4.jpg') repeat fixed;
+	/*background: url('../images/4.jpg') repeat fixed;*/
 	background-size: cover;
 	position: absolute;
 	top: 0; 
@@ -1151,8 +1180,8 @@ top: 0;
 
 .slideshow > nav span {
 	display: inline-block;
-	width: 60px;
-	height: 7px;
+	width: 90px;
+	height: 20px;
 	border:1px solid #fff;
 	cursor: pointer;
 	margin: 0 3px;
@@ -1182,7 +1211,7 @@ top: 0;
 	text-align:left;
 	margin-top:150px;
 	padding-bottom:30px;
-	color: #fff;
+	color: #CFA144;
 }
 .description p {
 	text-align:left;
@@ -1712,8 +1741,8 @@ top: 0;
 	}
 
 	.slideshow > nav span {
-		width: 20px;
-		height: 10px;
+		width: 37px;
+		height: 16px;
 		margin: 0 10px;
 	}
 }
@@ -1787,7 +1816,7 @@ top: 0;
 }
 .portfolio-box .mask{ 
 	position:absolute;
-	background:rgba(10,10,10,.7) url('../images/cross.png') no-repeat center center;
+	background:rgba(10,10,10,.7)  no-repeat center center;
 	top:0;
 	left:0;
 	width: 100%;
@@ -2319,8 +2348,8 @@ html[xmlns] .slides {display: block;}
  
  
   .parallax2 {
-	background: url('../images/6.jpg') repeat fixed;
-	background-size: cover;
+	background: url('../images/gallery/15.jpg') fixed;
+	background-size: contain;
 	position: absolute;
 	top: 0; 
 	left: 0; 
@@ -2559,8 +2588,8 @@ html[xmlns] .slides {display: block;}
 	width: 100%;
 	background:#292929;
 	overflow:hidden;
-	padding-top:10px;
-	padding-bottom:10px;
+	padding-top:60px;
+	padding-bottom:50px;
 	z-index:2;
 } 
 .logos-wrap{
@@ -2762,6 +2791,41 @@ html[xmlns] .slides {display: block;}
 #button-con button:focus{ 
     outline: none !important;
  }
+
+
+
+
+.but {
+    position:relative;
+    text-align:center;
+        width: 100%;
+    margin:0 auto;
+    }
+.but button{
+    width:100%;
+    height:43px;
+    padding-top:0;
+    margin-top:32px;
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+    font-weight:700;
+    font-size: 13px;
+    line-height:43px;
+    background: rgba(60,60,60,.85);
+    text-transform:uppercase;
+ }
+.but button:hover{
+    background: rgba(60,60,60,1);
+ }
+.but button:focus{ 
+    outline: none !important;
+ }
+
+
+
+
+
+
 .text-align-center{
 	text-align:center;
 	padding-top:10px;
@@ -2832,8 +2896,8 @@ html[xmlns] .slides {display: block;}
 }
 #google_map {
 	width:100%;
-	height:400px;
-	z-index:0;
+	height:0px;
+	z-index:0
 	position:relative;	
 	display: none;
 	z-index:200;
@@ -3000,20 +3064,20 @@ h1 { font-size: 28px; line-height:28px; }
     font-size: 26px;
 }
 .logo{
-	width:80px;
-	height:50px;
+	width:49px;
+	height:60px;
 	left:10px;
 	top:10px;
-	background:url('../images/logo.png') no-repeat center center;
-	background-size:80px 50px;
+	background:url('../images/logos/logo2.png') no-repeat center center;
+	background-size:95px 67px;
 }
 .cbp-af-header.cbp-af-header-shrink .logo{
-	width:80px;
-	height:50px;
+	width:55px;
+	height:56px;
 	left:10px;
 	top:10px;
-	background:url('../images/logo.png') no-repeat center center;
-	background-size:80px 50px;
+	background:url('../images/logos/logo2.png') no-repeat center center;
+	background-size:86px 62px;
 	-webkit-transition : all 0.5s ease-out;
 	-moz-transition : all 0.5s ease-out;
 	-o-transition :all 0.5s ease-out;

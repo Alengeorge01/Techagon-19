@@ -1,25 +1,4 @@
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
 
-
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-
-
-
-/* #Base 960 Grid
-================================================== */
 
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
     .container .column,
@@ -50,7 +29,7 @@
     .container .sixteen.columns                 { width: 940px; }
 
     .container .one-third.column                { width: 300px; }
-    .container .two-thirds.column               { width: 620px; }
+    .container .two-thirds.column               { width: 460px; }
 
     /* Offsets */
     .container .offset-by-one                   { padding-left: 60px;  }
